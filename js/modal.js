@@ -5,10 +5,9 @@ const modalBtn = document.querySelectorAll(".modal-btn");
 const formData = document.querySelectorAll(".formData");
 const modalCloseBtn = document.querySelectorAll(".close");
 const form1 = document.getElementsByName("reserve");
-const submit = document.getElementsById("btn-submit-modal")
-const fermer = document.getElementById("close")
-const fermerModal = document.querySelector(".formConfirmation");
-const menu = document.getElementsById("menu")
+const submit = document.getElementById("btn-submit-modal")
+const btnRedClose = document.getElementById("close")
+const menu = document.getElementById("menu")
 
 
 function editNav() {
@@ -40,11 +39,11 @@ function closeModal() {
   modalbg.style.display = "none";
 }
 function closeModal2() {
-  fermerModal.style.display = "none";
+  modalbg.style.display = "none";
 }
 
 // Close modal event
-fermer.addEventListener("click", closeModal2)
+btnRedClose.addEventListener("click", closeModal2);
 
 // Close modal event
 modalCloseBtn[0].addEventListener("click", closeModal);

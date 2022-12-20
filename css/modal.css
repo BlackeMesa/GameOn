@@ -61,13 +61,13 @@ img {
   border-radius: 15px;
 }
 
-.topnav .icon {
+.topnav #menu {
   display: none;
 }
 
 @media screen and (max-width: 768px) {
   .topnav a {display: none;}
-  .topnav a.icon {
+   .topnav #menu {
     float: right;
     display: block;
     color: #fe142f;
@@ -87,7 +87,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .topnav.responsive {position: relative; display: block; padding-top: 4rem;}
-  .topnav.responsive .icon {
+  .topnav.responsive #menu {
     position: absolute;
     right: 0;
     top: 0;
@@ -109,7 +109,7 @@ img {
   }
 
   .topnav a {display: none;}
-  .topnav a.icon {
+  .topnav #menu {
     float: right;
     display: block;
   }
@@ -469,6 +469,16 @@ input[data-error]::after {
   margin: 0;
   margin-top: 59px;
 }
+.btn-submit {
+  outline: none;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  padding: 15px 23px;
+  margin: 0;
+  margin-top: 59px;
+}
+
 .hero-img {
   grid-column: span 8;
 }
